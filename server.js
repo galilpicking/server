@@ -31,6 +31,6 @@ app.post('/returnpdf', async (req, res) => {
   });
 });
 
-app.listen(port, () =>
+app.listen(process.env.PORT || port, () =>
   console.log(`Hello world app listening on port ${port}!`)
 );
